@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0% 30%;
     background-color: #1F2937;
     color: white;
     padding: 20px;
@@ -33,9 +33,10 @@ button {
 }
 .passwords {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     border-top: 1px solid #273549;
     margin-top:10px;
+    height: 25%;
 }
 #first-password, #second-password {
     background: #273549;
