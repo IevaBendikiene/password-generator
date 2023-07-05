@@ -11,10 +11,12 @@
         </h1>
         <p id="slogan">Never use an insecure password again.</p>
         <button id="generate-btn" onclick="generatePasswords()">Generate passwords</button>
+        <p>Click password to copy it.</p>
         <div class="passwords">
-            <p id="first-password"></p>
-            <p id="second-password"></p>
+            <p id="first-password" onclick="textCopy1()"></p>
+            <p id="second-password" onclick="textCopy2()"></p>
         </div>
+        <div id="text-copied"></div>
         <script src="index.js"></script>
     </body>
 </html>
