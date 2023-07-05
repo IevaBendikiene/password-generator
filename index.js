@@ -20,3 +20,43 @@ function generatePasswords() {
         secondPassword.textContent += getRandomCharacter()        
     }
 }
+function textCopy1() {
+    //copyText variable get the text content from the element with psw-el1 id
+    let copyText = document.getElementById("first-password").textContent   
+    //get
+    let textCopied = document.getElementById("text-copied")
+    //using the browser API we copy the password to clipboard
+    navigator.clipboard.writeText(copyText)
+    .then(() => {
+      // Show the copied message
+      textCopied.textContent = "Text Copied!";
+      textCopied.style.opacity = 1;
+      
+      // Fade away the message after 2 seconds
+      setTimeout(() => {
+        textCopied.style.opacity = 0;
+        textCopied.textContent = "";
+      }, 700);
+    })
+    
+}
+
+function textCopy2() {
+    //copyText variable get the text content from the element with psw-el1 id
+    let copyText = document.getElementById("second-password").textContent   
+    //get
+    let textCopied = document.getElementById("text-copied")
+    //using the browser API we copy the password to clipboard
+    navigator.clipboard.writeText(copyText)
+    .then(() => {
+      // Show the copied message
+      textCopied.textContent = "Text Copied!";
+      textCopied.style.opacity = 1;
+      
+      // Fade away the message after 2 seconds
+      setTimeout(() => {
+        textCopied.style.opacity = 0;
+        textCopied.textContent = "";
+      }, 700);
+    })
+}
